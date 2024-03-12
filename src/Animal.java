@@ -8,15 +8,15 @@ public class Animal
     private boolean fed;
     private boolean petted;
 
-    public Animal(String name, int age, boolean vaccinated, String eyeColor, boolean adopted, boolean fed, boolean petted)
+    public Animal(String name, int age, boolean vaccinated, String eyeColor)
     {
         this.name = name;
         this.age = age;
         this.vaccinated = vaccinated;
         this.eyeColor = eyeColor;
-        this.adopted = adopted;
-        this.fed = fed;
-        this.petted = petted;
+        this.adopted = false;
+        this.fed = false;
+        this.petted = false;
     }
 
     public void adopt()

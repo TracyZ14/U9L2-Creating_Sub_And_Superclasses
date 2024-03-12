@@ -1,34 +1,34 @@
 public class Dog extends Animal
 {
-    private boolean hasBeenWalked;
-    private boolean hasPlayedFetch;
+    private boolean beenWalked;
+    private boolean playedFetch;
 
-    public Dog(String name, int age, boolean vaccinated, String eyeColor, boolean adopted, boolean fed, boolean petted, boolean hasBeenWalked, boolean hasPlayedFetch)
+    public Dog(String name, int age, boolean vaccinated, String eyeColor)
     {
-        super(name, age, vaccinated, eyeColor, adopted, fed, petted);
-        this.hasBeenWalked = hasBeenWalked;
-        this.hasPlayedFetch = hasPlayedFetch;
+        super(name, age, vaccinated, eyeColor);
+        this.beenWalked = false;
+        this.playedFetch = false;
     }
 
     public void walk()
     {
-        hasBeenWalked = true;
+        beenWalked = true;
         System.out.println(getName() + " has been walked.");
     }
 
     public void playFetch()
     {
-        hasPlayedFetch = true;
+        playedFetch = true;
         System.out.println(getName() + " has played fetch.");
     }
 
-    public boolean isHasBeenWalked()
+    public boolean hasBeenWalked()
     {
-        return hasBeenWalked;
+        return beenWalked;
     }
 
-    public boolean isHasPlayedFetch()
+    public boolean hasPlayedFetch()
     {
-        return hasPlayedFetch;
+        return playedFetch;
     }
 }
